@@ -1,0 +1,17 @@
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\bin\Debug\MultiplosParesImparesArduino.exe.config
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\bin\Debug\MultiplosParesImparesArduino.exe
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\bin\Debug\MultiplosParesImparesArduino.pdb
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.AssemblyReference.cache
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Form1.resources
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Properties.Resources.resources
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.GenerateResource.cache
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.CoreCompileInputs.cache
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.exe
+D:\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\S2AM\Repos\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.pdb
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.AssemblyReference.cache
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Form1.resources
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Properties.Resources.resources
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.GenerateResource.cache
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.CoreCompileInputs.cache
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.exe
+C:\Users\carsh\Downloads\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.pdb

@@ -1,5 +1,5 @@
 
-int Pin = 13;
+int Pin = 9;
 int pulsoCorto = 200;
 int pulsoLargo = 600;
  
@@ -14,10 +14,10 @@ void loop() {
   delay(pulsoCorto*3);
   // Letra O
   SecuenciaLetra(pulsoLargo);
-  delay(pulsoCorto*3);
+  delay(pulsoLargo);
   // Letra S
   SecuenciaLetra(pulsoCorto);
-  delay(pulsoLargo*3);
+  delay(pulsoCorto*10);
 }
  
 void SecuenciaLetra(int pulso)

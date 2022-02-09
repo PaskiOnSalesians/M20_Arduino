@@ -11,11 +11,11 @@ using System.IO.Ports;
 
 namespace MultiplosParesImparesArduino
 {
-    public partial class Form1 : Form
+    public partial class frmMultiplosParesImpares : Form
     {
         SerialPort ArduinoPort;
         string[] PuertosDisponibles;
-        public Form1()
+        public frmMultiplosParesImpares()
         {
             InitializeComponent();          
         }
@@ -25,7 +25,7 @@ namespace MultiplosParesImparesArduino
 
             foreach (var item in PuertosDisponibles)
             {
-                comboBox1.Items.Add(item);
+                cmbx_puerto.Items.Add(item);
             }
         }
 
@@ -36,10 +36,13 @@ namespace MultiplosParesImparesArduino
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             ArduinoPort = new SerialPort();
-            ArduinoPort.PortName = comboBox1.GetItemText(comboBox1.SelectedItem);
+            ArduinoPort.PortName = cmbx_puerto.GetItemText(cmbx_puerto.SelectedItem);
             ArduinoPort.BaudRate = 9600;
             ArduinoPort.Open();
+            ArduinoPort.WriteLine(txtbx_ciclo.Text + "," + txtbx_multiplo.Text);
+            ArduinoPort.Close();
         }
 
         //private void button2_Click(object sender, EventArgs e)

@@ -31,7 +31,7 @@ namespace MultiplosParesImparesArduino
             ArduinoPort = new SerialPort();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_connect_Click(object sender, EventArgs e)
         {
             ArduinoPort.PortName = cmbx_puerto.GetItemText(cmbx_puerto.SelectedItem);
             ArduinoPort.BaudRate = 9600;
@@ -40,8 +40,16 @@ namespace MultiplosParesImparesArduino
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            ArduinoPort.WriteLine(txtbx_ciclo.Text + "," + txtbx_multiplo.Text);
-            ArduinoPort.Close();
+            try
+            {
+                ArduinoPort.WriteLine(txtbx_ciclo.Text + "," + txtbx_multiplo.Text);
+                ArduinoPort.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Torna a iniciar la connexió.", "Arduino Controller - ERROR 007");
+            }
+            
         }
     }
 }

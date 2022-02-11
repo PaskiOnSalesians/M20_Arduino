@@ -96,14 +96,14 @@ namespace MultiplosParesImparesArduino
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(307, 72);
+            this.btn_connect.Location = new System.Drawing.Point(287, 72);
             this.btn_connect.Margin = new System.Windows.Forms.Padding(2);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(56, 19);
             this.btn_connect.TabIndex = 6;
             this.btn_connect.Text = "Connect";
             this.btn_connect.UseVisualStyleBackColor = true;
-            this.btn_connect.Click += new System.EventHandler(this.button1_Click);
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
             // btn_send
             // 

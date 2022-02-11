@@ -27,37 +27,21 @@ namespace MultiplosParesImparesArduino
             {
                 cmbx_puerto.Items.Add(item);
             }
-        }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            ArduinoPort = new SerialPort();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            ArduinoPort = new SerialPort();
             ArduinoPort.PortName = cmbx_puerto.GetItemText(cmbx_puerto.SelectedItem);
             ArduinoPort.BaudRate = 9600;
             ArduinoPort.Open();
+        }
+
+        private void btn_send_Click(object sender, EventArgs e)
+        {
             ArduinoPort.WriteLine(txtbx_ciclo.Text + "," + txtbx_multiplo.Text);
             ArduinoPort.Close();
         }
-
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    Write(Int64.Parse(textBox1.Text)#Int64.Parse(textBox2.Text));
-        //    int resultado;
-        //    for (int i = 0; i < Int64.Parse(textBox1.Text); i++)
-        //    {
-
-        //        resultado = i/Int32.Parse(textBox2.Text);
-        //        if (resultado%2==0)
-        //        {
-                    
-        //        }
-        //    }
-        //}
     }
 }

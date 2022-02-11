@@ -77,7 +77,6 @@ namespace MultiplosParesImparesArduino
             this.cmbx_puerto.Name = "cmbx_puerto";
             this.cmbx_puerto.Size = new System.Drawing.Size(92, 21);
             this.cmbx_puerto.TabIndex = 3;
-            this.cmbx_puerto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtbx_ciclo
             // 
@@ -115,6 +114,7 @@ namespace MultiplosParesImparesArduino
             this.btn_send.TabIndex = 7;
             this.btn_send.Text = "Enviar";
             this.btn_send.UseVisualStyleBackColor = true;
+            this.btn_send.Click += new System.EventHandler(this.btn_send_Click);
             // 
             // frmMultiplosParesImpares
             // 

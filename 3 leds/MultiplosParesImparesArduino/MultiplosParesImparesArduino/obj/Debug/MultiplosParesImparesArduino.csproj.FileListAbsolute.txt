@@ -19,9 +19,9 @@ C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\bin\Debug\MultiplosParesImparesArduino.exe
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\bin\Debug\MultiplosParesImparesArduino.pdb
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.AssemblyReference.cache
-C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Form1.resources
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.Properties.Resources.resources
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.GenerateResource.cache
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.exe
 C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.pdb
+C:\Users\Paski\Documents\GitHub\M20-Arduino\3 leds\MultiplosParesImparesArduino\MultiplosParesImparesArduino\obj\Debug\MultiplosParesImparesArduino.frmMultiplosParesImpares.resources

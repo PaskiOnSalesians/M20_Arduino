@@ -36,20 +36,27 @@ namespace MultiplosParesImparesArduino
             ArduinoPort.PortName = cmbx_puerto.GetItemText(cmbx_puerto.SelectedItem);
             ArduinoPort.BaudRate = 9600;
             ArduinoPort.Open();
+            ArduinoPort.WriteLine("abcd");
+            ArduinoPort.Close();
         }
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            try
+            bool error = false;
+
+            if(Int32.Parse(txtbx_multiplo.Text) == 2 ||
+               Int32.Parse(txtbx_multiplo.Text) == 3 ||
+               Int32.Parse(txtbx_multiplo.Text) == 5 ||
+               Int32.Parse(txtbx_multiplo.Text) == 7)
             {
+                ArduinoPort.Open();
                 ArduinoPort.WriteLine(txtbx_ciclo.Text + "," + txtbx_multiplo.Text);
                 ArduinoPort.Close();
             }
-            catch
+            else
             {
-                MessageBox.Show("Torna a iniciar la connexió.", "Arduino Controller - ERROR 007");
+                MessageBox.Show("Multiples incorrectes.", "Arduino Controller - ERROR 007");
             }
-            
         }
     }
 }

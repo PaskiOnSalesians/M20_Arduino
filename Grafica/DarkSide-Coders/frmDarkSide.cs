@@ -13,7 +13,7 @@ namespace DarkSide_Coders
     public partial class frm_darkside : Form
     {
         Dictionary<double, double> graphCoords = new Dictionary<double, double>();
-        double x = 1, y;
+        double x = 0, y;
 
         public frm_darkside()
         {
@@ -24,20 +24,19 @@ namespace DarkSide_Coders
         {
             if (x < 1000)
             {
-                x += 1;
                 y = Math.Pow(Math.E, x / 100);
 
                 graphCoords.Add(x, y);
 
                 ch_dark.Series["Dades"].Points.AddXY(x, y);
 
-                if(x % 25 == 0 || x == 0)
+                if(x % 25 == 0)
                 {
                     string[] row = { x.ToString(), y.ToString() };
                     ListViewItem lvi = new ListViewItem(row);
                     listview_coords.Items.Add(lvi);
                 }
-                
+                x += 1;
             }
             else
             {

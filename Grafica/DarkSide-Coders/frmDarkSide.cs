@@ -13,38 +13,35 @@ namespace DarkSide_Coders
     public partial class frm_darkside : Form
     {
         IDictionary<double, double> graphCoords = new Dictionary<double, double>();
-        double x, y;
-
-        bool timerOFF = false;
+        double x = 1, y;
 
         public frm_darkside()
         {
             InitializeComponent();
         }
 
-        private void btn_start_Click(object sender, EventArgs e)
-        {
-            timer_x.Start();
-            
-
-            if (x > 1000)
-            {
-                timer_x.Stop();
-                timerOFF = true;
-            }
-        }
-
         private void timer_x_Tick(object sender, EventArgs e)
         {
-            if (!timerOFF)
+            if (x < 1000)
             {
-                x = DateTime.Now.Millisecond;
+                x += 1;
                 y = Math.Pow(Math.E, x / 100);
 
                 Console.WriteLine(x);
                 Console.WriteLine(y);
-                //graphCoords.Add(x, y);
+                ch_dark.Series["Dades"].Points.AddXY(x, y);
             }
         }
+
+        private void btn_start_Click(object sender, EventArgs e)
+        {
+            timer_x.Start();
+
+            if (x > 1000)
+            {
+                timer_x.Stop();
+            }
+        }
+
     }
 }

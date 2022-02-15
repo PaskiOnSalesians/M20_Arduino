@@ -18,3 +18,13 @@ C:\Users\Paski\Documents\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\Da
 C:\Users\Paski\Documents\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.exe
 C:\Users\Paski\Documents\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.pdb
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\bin\Debug\DarkSide-Coders.exe.config
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\bin\Debug\DarkSide-Coders.exe
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\bin\Debug\DarkSide-Coders.pdb
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide_Coders.frm_darkside.resources
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide_Coders.Properties.Resources.resources
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.exe
+\\Mac\Home\Desktop\GitHub\M20-Arduino\Grafica\DarkSide-Coders\obj\Debug\DarkSide-Coders.pdb

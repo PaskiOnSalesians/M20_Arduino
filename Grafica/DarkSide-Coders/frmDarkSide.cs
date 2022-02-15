@@ -12,13 +12,10 @@ namespace DarkSide_Coders
 {
     public partial class frm_darkside : Form
     {
-        Timer timer_x = new Timer();
+        IDictionary<double, double> graphCoords = new Dictionary<double, double>();
+        double x, y;
 
-        IDictionary<int, int> graphCoords = new Dictionary<int, int>();
-
-        // y = Math.pow(Math.e, x/100)
-
-        bool isTimerOn = false;
+        bool timerOFF = false;
 
         public frm_darkside()
         {
@@ -27,16 +24,27 @@ namespace DarkSide_Coders
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            timer_x.Interval = 1000;
-            timer_x.Enabled = true;
-
+            timer_x.Start();
             
+
+            if (x > 1000)
+            {
+                timer_x.Stop();
+                timerOFF = true;
+            }
         }
 
         private void timer_x_Tick(object sender, EventArgs e)
         {
-            timer_x.Start();
-            //this.Time.Text = System.DateTime.Now.ToString("s t");
+            if (!timerOFF)
+            {
+                x = DateTime.Now.Millisecond;
+                y = Math.Pow(Math.E, x / 100);
+
+                Console.WriteLine(x);
+                Console.WriteLine(y);
+                //graphCoords.Add(x, y);
+            }
         }
     }
 }

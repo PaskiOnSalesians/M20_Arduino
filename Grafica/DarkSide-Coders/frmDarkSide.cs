@@ -16,6 +16,8 @@ namespace DarkSide_Coders
         Dictionary<double, double> graphCoords = new Dictionary<double, double>();
         double x = 0, y;
 
+        String fullPath;
+
         public frm_darkside()
         {
             InitializeComponent();
@@ -23,34 +25,40 @@ namespace DarkSide_Coders
 
         private void timer_x_Tick(object sender, EventArgs e)
         {
-            if (x < 1000)
+            if (x <= 1000)
             {
-                if(x != 0)
-                {
-                    x += 1;
-                    y = Math.Pow(Math.E, x / 100);
-                }
+                y = Math.Pow(Math.E, x / 100);
+
+                y = Math.Round(y, 3, MidpointRounding.AwayFromZero);
 
                 graphCoords.Add(x, y);
 
                 ch_dark.Series["Dades"].Points.AddXY(x, y);
 
-                if(x % 25 == 0 || x == 0)
+                if(x % 25 == 0)
                 {
                     string[] row = { x.ToString(), y.ToString() };
                     ListViewItem lvi = new ListViewItem(row);
                     listview_coords.Items.Add(lvi);
                 }
-                
+                x += 1;
             }
             else
             {
                 timer_x.Stop();
 
-                foreach (KeyValuePair<double, double> kvp in graphCoords)
+                fullPath = txt_path.Text;
+                using (StreamWriter sw = new StreamWriter(fullPath))
                 {
-                    txtbox_info.Text += string.Format("Key: {0}, Value: {1}\n", kvp.Key, kvp.Value);
+                    sw.WriteLine("Time, Temperature");
+                    foreach (KeyValuePair<double, double> kvp in graphCoords)
+                    {
+                        sw.WriteLine(string.Format("{0} | {1}", kvp.Key, kvp.Value));
+                    }
                 }
+                    
+
+                txtbox_info.Text = File.ReadAllText(fullPath);
             }
         }
 
@@ -66,7 +74,7 @@ namespace DarkSide_Coders
             SaveFileDialog sfd = new SaveFileDialog();
 
             sfd.Filter = "txt files (*.txt)|*.txt";
-            sfd.InitialDirectory = "C:\\calibration.txt";
+            sfd.InitialDirectory = "C:\\temp\\calibration.txt";
             sfd.FilterIndex = 2;
             sfd.RestoreDirectory = true;
 

@@ -30,12 +30,15 @@ namespace DarkSide_Coders
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.txtbox_info = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_explorer = new System.Windows.Forms.Button();
+            this.txt_path = new System.Windows.Forms.TextBox();
             this.btn_start = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,10 +49,7 @@ namespace DarkSide_Coders
             this.listview_coords = new System.Windows.Forms.ListView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.timer_x = new System.Windows.Forms.Timer(this.components);
-            this.txt_path = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btn_explorer = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ch_dark)).BeginInit();
@@ -79,6 +79,36 @@ namespace DarkSide_Coders
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 77);
             this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(566, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Ruta TXT File:";
+            // 
+            // btn_explorer
+            // 
+            this.btn_explorer.Location = new System.Drawing.Point(1103, 34);
+            this.btn_explorer.Name = "btn_explorer";
+            this.btn_explorer.Size = new System.Drawing.Size(29, 20);
+            this.btn_explorer.TabIndex = 2;
+            this.btn_explorer.Text = "...";
+            this.btn_explorer.UseVisualStyleBackColor = true;
+            this.btn_explorer.Click += new System.EventHandler(this.btn_explorer_Click);
+            // 
+            // txt_path
+            // 
+            this.txt_path.Location = new System.Drawing.Point(670, 34);
+            this.txt_path.Name = "txt_path";
+            this.txt_path.Size = new System.Drawing.Size(427, 20);
+            this.txt_path.TabIndex = 1;
+            this.txt_path.Text = "C:\\temp\\calibration.txt";
             // 
             // btn_start
             // 
@@ -145,54 +175,54 @@ namespace DarkSide_Coders
             this.ch_dark.BackSecondaryColor = System.Drawing.Color.White;
             this.ch_dark.BorderSkin.BackColor = System.Drawing.Color.White;
             this.ch_dark.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea11.AxisX.InterlacedColor = System.Drawing.Color.White;
-            chartArea11.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea11.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisX.Maximum = 1000D;
-            chartArea11.AxisX.Minimum = 0D;
-            chartArea11.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisX.ScaleView.SmallScrollMinSize = 0D;
-            chartArea11.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea11.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea11.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea11.AxisX2.TitleForeColor = System.Drawing.Color.White;
-            chartArea11.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea11.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea11.AxisY.Maximum = 25000D;
-            chartArea11.AxisY.Minimum = 0D;
-            chartArea11.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            chartArea11.BackSecondaryColor = System.Drawing.Color.White;
-            chartArea11.BorderColor = System.Drawing.Color.White;
-            chartArea11.CursorX.SelectionColor = System.Drawing.Color.LightGoldenrodYellow;
-            chartArea11.Name = "ChartArea1";
-            this.ch_dark.ChartAreas.Add(chartArea11);
+            chartArea1.AxisX.InterlacedColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisX.Maximum = 1000D;
+            chartArea1.AxisX.Minimum = 0D;
+            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisX.ScaleView.SmallScrollMinSize = 0D;
+            chartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX2.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisY.Maximum = 25000D;
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            chartArea1.BackSecondaryColor = System.Drawing.Color.White;
+            chartArea1.BorderColor = System.Drawing.Color.White;
+            chartArea1.CursorX.SelectionColor = System.Drawing.Color.LightGoldenrodYellow;
+            chartArea1.Name = "ChartArea1";
+            this.ch_dark.ChartAreas.Add(chartArea1);
             this.ch_dark.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            legend11.ForeColor = System.Drawing.Color.White;
-            legend11.Name = "Legend1";
-            this.ch_dark.Legends.Add(legend11);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            legend1.ForeColor = System.Drawing.Color.White;
+            legend1.Name = "Legend1";
+            this.ch_dark.Legends.Add(legend1);
             this.ch_dark.Location = new System.Drawing.Point(0, 0);
             this.ch_dark.Name = "ch_dark";
             this.ch_dark.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.ch_dark.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.LawnGreen};
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Legend = "Legend1";
-            series11.Name = "Dades";
-            this.ch_dark.Series.Add(series11);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Dades";
+            this.ch_dark.Series.Add(series1);
             this.ch_dark.Size = new System.Drawing.Size(479, 326);
             this.ch_dark.TabIndex = 5;
             this.ch_dark.Text = "ch_dark";
-            title11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title11.ForeColor = System.Drawing.Color.White;
-            title11.Name = "DarkSide Coders";
-            title11.Text = "DarkSide Coders";
-            this.ch_dark.Titles.Add(title11);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.White;
+            title1.Name = "DarkSide Coders";
+            title1.Text = "DarkSide Coders";
+            this.ch_dark.Titles.Add(title1);
             // 
             // panel7
             // 
@@ -231,40 +261,10 @@ namespace DarkSide_Coders
             this.timer_x.Interval = 1;
             this.timer_x.Tick += new System.EventHandler(this.timer_x_Tick);
             // 
-            // txt_path
-            // 
-            this.txt_path.Location = new System.Drawing.Point(670, 34);
-            this.txt_path.Name = "txt_path";
-            this.txt_path.Size = new System.Drawing.Size(427, 20);
-            this.txt_path.TabIndex = 1;
-            this.txt_path.Text = "C:\\calibration.txt";
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // btn_explorer
-            // 
-            this.btn_explorer.Location = new System.Drawing.Point(1103, 34);
-            this.btn_explorer.Name = "btn_explorer";
-            this.btn_explorer.Size = new System.Drawing.Size(29, 20);
-            this.btn_explorer.TabIndex = 2;
-            this.btn_explorer.Text = "...";
-            this.btn_explorer.UseVisualStyleBackColor = true;
-            this.btn_explorer.Click += new System.EventHandler(this.btn_explorer_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(566, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ruta TXT File:";
             // 
             // frm_darkside
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace DarkSide_Coders
     public partial class frm_darkside : Form
     {
         Dictionary<double, double> graphCoords = new Dictionary<double, double>();
-        double x = 1, y;
+        double x = 0, y;
 
         public frm_darkside()
         {
@@ -24,8 +25,11 @@ namespace DarkSide_Coders
         {
             if (x < 1000)
             {
-                x += 1;
-                y = Math.Pow(Math.E, x / 100);
+                if(x != 0)
+                {
+                    x += 1;
+                    y = Math.Pow(Math.E, x / 100);
+                }
 
                 graphCoords.Add(x, y);
 
@@ -55,6 +59,21 @@ namespace DarkSide_Coders
             listview_coords.View = View.Details;
             listview_coords.Columns.Add("Time");
             listview_coords.Columns.Add("Temperature");
+        }
+
+        private void btn_explorer_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+
+            sfd.Filter = "txt files (*.txt)|*.txt";
+            sfd.InitialDirectory = "C:\\calibration.txt";
+            sfd.FilterIndex = 2;
+            sfd.RestoreDirectory = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                txt_path.Text = Path.GetFullPath(sfd.FileName);
+            }
         }
 
         private void btn_start_Click(object sender, EventArgs e)
